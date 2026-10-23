@@ -1,5 +1,4 @@
-const {withdraw} = require('./transaction.service');
-const db = require('../src/config/db'); 
+const {withdraw} = require('../src/services/transaction.service'); 
 
 jest.mock('../src/config/db');
 
