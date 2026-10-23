@@ -23,7 +23,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      
-
       - name: Run Unit Tests
         run: npm test
+        env:
+          DB_PASSWORD: "dummy_password_for_testing"
+          DB_USER: "dummy_user"
+          DB_HOST: "localhost"
+          DB_NAME: "test_db"
+          DB_PORT: "5432"
