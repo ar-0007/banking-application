@@ -1,7 +1,7 @@
 const {withdraw} = require('./transaction.service');
-const db = require ('./db');
+const db = require('../src/config/db'); 
 
-jest.mock('./db');
+jest.mock('../src/config/db');
 
 describe('withdraw api test ', () => {
     test('transaction has been sucessfull if the amount is in the account ', async () => {
