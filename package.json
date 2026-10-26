@@ -7,12 +7,13 @@
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
     "test": "jest",
-    "lint" : "eslint ."
+    "lint": "eslint ."
   },
   "dependencies": {
+    "@faker-js/faker": "^10.6.0",
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "pg": "^8.13.1"
+    "pg": "^8.23.1"
   },
   "devDependencies": {
     "chai": "^6.3.0",

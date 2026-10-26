@@ -19,6 +19,7 @@ app.get("/health", async (req, res, next) => {
 });
 
 app.use("/api/accounts", accountRoutes);
+
 app.use("/api/transactions", transactionRoutes);
 app.use("/api", refundRoutes);
 app.use("/api", cancellationRoutes);
