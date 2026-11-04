@@ -2,3 +2,6 @@ node_modules/
 .env
 npm-debug.log*
 .DS_Store
+
+banking_db_manual.dump
+server.js.backup

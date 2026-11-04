@@ -1,0 +1,7 @@
+{
+  "SelectionName": "banking-postgres-ebs-selection",
+  "IamRoleArn": "arn:aws:iam::650435901299:role/AWSBackupDefaultServiceRole",
+  "Resources": [
+    "arn:aws:ec2:ap-southeast-2:650435901299:volume/vol-0302d7926ba95fde0"
+  ]
+}
