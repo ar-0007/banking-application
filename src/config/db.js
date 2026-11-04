@@ -4,7 +4,6 @@ const path = require("path");
 const fs = require("fs");
 const dotenv = require("dotenv");
 
-// Always load .env from the banking-api project root
 const envPath = path.resolve(__dirname, "../../.env");
 dotenv.config({ path: envPath });
 
@@ -35,12 +34,12 @@ if (sslEnabled) {
   };
 }
 
-console.log("ENV FILE:", envPath);
-console.log("DB_HOST:", poolConfig.host);
-console.log("DB_PORT:", poolConfig.port);
-console.log("DB_NAME:", poolConfig.database);
-console.log("DB_USER:", poolConfig.user);
-console.log("DB_PASSWORD loaded:", Boolean(poolConfig.password));
+// console.log("ENV FILE:", envPath);
+// console.log("DB_HOST:", poolConfig.host);
+// console.log("DB_PORT:", poolConfig.port);
+// console.log("DB_NAME:", poolConfig.database);
+// console.log("DB_USER:", poolConfig.user);
+// console.log("DB_PASSWORD loaded:", Boolean(poolConfig.password));
 
 const pool = new Pool(poolConfig);
 
