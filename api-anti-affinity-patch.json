@@ -1,0 +1,22 @@
+{
+  "spec": {
+    "template": {
+      "spec": {
+        "affinity": {
+          "podAntiAffinity": {
+            "requiredDuringSchedulingIgnoredDuringExecution": [
+              {
+                "labelSelector": {
+                  "matchLabels": {
+                    "app": "banking-api"
+                  }
+                },
+                "topologyKey": "topology.kubernetes.io/zone"
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}

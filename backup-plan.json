@@ -1,0 +1,15 @@
+{
+  "BackupPlanName": "banking-postgres-daily-plan",
+  "Rules": [
+    {
+      "RuleName": "daily-postgres-ebs-backup",
+      "TargetBackupVaultName": "banking-postgres-backups",
+      "ScheduleExpression": "cron(0 2 * * ? *)",
+      "StartWindowMinutes": 60,
+      "CompletionWindowMinutes": 180,
+      "Lifecycle": {
+        "DeleteAfterDays": 7
+      }
+    }
+  ]
+}
